@@ -1,0 +1,112 @@
+body {
+    margin: 0px;
+    text-align: center;
+    font-size: 1rem;
+}
+* {
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;
+}
+.d-flx {
+    display: flex;
+    flex-wrap: wrap;
+}
+.nav {
+    border-bottom: 1px solid #d3d3d3;
+    padding-bottom: 15px;
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+}
+.nav-items {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    padding-top: 10px;
+    margin: auto;
+}
+.nav-item {
+    margin-left: 15px;
+}
+.container {
+    padding-top: 100px;
+}
+.title {
+    font-size: 3rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: bolder;
+    margin: auto auto 3rem auto ;
+}
+.footer {
+    color: #fff;
+    padding: 30px;
+}
+.sub-title {
+    max-width: 50%; 
+    margin: 30px auto;
+    padding: 20px 0px;
+    line-height: 1.7;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+a.btn {
+    background-color: orangered;
+    padding: 1rem   ;
+    color: white;  
+    margin: 20px; 
+    text-decoration: none;
+    display: inline-block;
+}
+.flex-item {
+    width: 33.33%;
+    padding: 10px;
+}
+.offer-card {
+    width: calc(33.33% - 10px);
+    background-color: #fff;
+    margin-bottom: 10px;
+    border: 0.5 rgb(17, 54, 95) solid;
+    transition: all 0.5s;
+    padding: 15px;
+    border-radius: 2px;
+    text-align: left;
+}
+.offer-card a {
+    text-decoration: none;
+    color: #056cb8;
+    font-size: 1.2rem;
+}
+.offer-group {
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+}
+@media (max-width: 900px) {
+    .title {
+        font-size: 2rem;
+    }
+    h5 {
+        /* font-size: 1.4rem; */
+        width: 80%;
+    }
+    /* p {
+        font-size: rem;
+    } */
+    .offer-card {
+        width: calc(50% - 6px);
+        transition: all 0.5s;
+    }
+    .offer-card p {
+        font-size: 1rem;
+    }
+}
+@media (max-width: 760px) {
+    .offer-card {
+        width: 100%;
+        transition: all 0.5s;
+    }
+    .offer-card p {
+        font-size: 1rem;
+    }
+}
